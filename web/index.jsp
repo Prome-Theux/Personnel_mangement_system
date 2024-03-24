@@ -11,9 +11,11 @@
     <title>人事管理系统</title>
 </head>
 <body>
+    <h1>
+        你好世界
+    </h1>
     <%
         out.print("hello world");
-
     %>
 
 </body>
