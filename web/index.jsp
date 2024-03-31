@@ -8,15 +8,25 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="login.css">
     <title>人事管理系统</title>
 </head>
-<body>
-    <h1>
-        你好世界
-    </h1>
-    <%
-        out.print("hello world");
-    %>
+<body style="background: #202124">
+<div id="login_frame">
+    <h1>人事管理系统</h1>
+    <h3>----22软件技术 第二小组</h3>
+    <form>
+        <input class="text" type="text" name="uid"><br>
+        <input class="text" type="password" name="pass"><br>
+        <input type="submit" name="take">
+    </form>
+</div>
+<%
+    //添加修改运行
+    //写分页显示模块 删除显示模块
+    //其他表的显示操作
+    //后续功能
+%>
 
 </body>
 </html>
