@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="login.css">
     <title>人事管理系统</title>
 </head>
-<body style="background: #202124">
+<body style="background: #202124;position: relative;" >
 <div id="login_frame">
     <h1>人事管理系统</h1>
     <h3>----22软件技术 第二小组</h3>

@@ -1,8 +1,4 @@
-body
-{
-    position: relative;
 
-}
 #login_frame
 {
     position: absolute;
@@ -16,14 +12,20 @@ body
 }
 #system_frame
 {
+/*
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
+*/
+    color: #bdc1c6;
+    flex-direction: column;
+    display: flex;
+    padding: 2px;
     border-style: solid;
     border-color: #5f6368;
     text-align: center;
-    width: 1200px;
+    margin: 20px 16%;
 }
 #login_frame h1
 {
@@ -33,6 +35,22 @@ body
 {
     color: #bdc1c6;
 }
+#system_frame div
+{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#system_frame div div
+{
+    margin: auto 15px;
+}
+.button
+{
+    display: flex;
+    flex-direction: column
+}
+
 
 #login_frame h3
 {
@@ -42,6 +60,7 @@ body
 {
     color: #5f6368;
 }
+
 
 #login_frame .text
 {
