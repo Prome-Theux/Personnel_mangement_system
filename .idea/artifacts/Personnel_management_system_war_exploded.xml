@@ -6,6 +6,7 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Personnel_management_system" />
         </element>
+        <element id="directory" name="lib" />
       </element>
       <element id="javaee-facet-resources" facet="Personnel_management_system/web/Web" />
     </root>

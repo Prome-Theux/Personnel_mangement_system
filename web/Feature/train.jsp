@@ -11,6 +11,6 @@
     <title>培训管理</title>
 </head>
 <body>
-
+    
 </body>
 </html>
