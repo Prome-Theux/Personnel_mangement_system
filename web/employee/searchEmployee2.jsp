@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
+ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8" import="java.sql.*" %>
 
 <%@ include file="../inc/checks.jsp" %>

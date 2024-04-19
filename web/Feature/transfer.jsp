@@ -9,8 +9,12 @@
 <html>
 <head>
     <title>调动管理</title>
+    <link rel="stylesheet" type="text/css" href="../login.css">
 </head>
-<body>
+<body style="background: #202124">
+<div id="system_frame" style="background: #20252f">
+    <h1>调动管理</h1>
 
+</div>
 </body>
 </html>
