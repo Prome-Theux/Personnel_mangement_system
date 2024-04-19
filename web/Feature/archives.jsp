@@ -10,14 +10,15 @@
 <head>
     <title>档案管理</title>
     <link rel="stylesheet" type="text/css" href="../login.css">
+    <script type="text/javascript" src="../skip.js"></script>
 </head>
 <body style="background: #202124">
     <div id="system_frame" style="background: #20252f">
         <h1>档案管理</h1>
         <div style="color: #8ab4f8">
-            <div><p class="button">查询档案</p></div>
-            <div><p class="button">添加档案</p></div>
-            <div><p class="button">管理档案</p></div>
+            <div class="button" onclick="feature_button('Archives','add.jsp')"><p>查询档案</p></div>
+            <div class="button" onclick="feature_button('Archives','manage.jsp')"><p>添加档案</p></div>
+            <div class="button" onclick="feature_button('Archives','search.jsp')"><p>管理档案</p></div>
         </div>
     </div>
 

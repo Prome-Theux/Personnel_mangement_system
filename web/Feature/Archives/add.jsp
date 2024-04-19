@@ -9,7 +9,7 @@
 <%@ page import="java.sql.*"%>
 <html>
 <head>
-    <title>档案管理</title>
+    <title>添加档案</title>
     <link rel="stylesheet" type="text/css" href="../../login.css">
     <style type="text/css">
         span{

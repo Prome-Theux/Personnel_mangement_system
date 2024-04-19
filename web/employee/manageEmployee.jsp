@@ -60,9 +60,7 @@ function checkall(form){
     	<input type="submit" value="删除" />
     </th>
   </tr>
-<%
 
-%>
 </form>
 <tr><td colspan="9">
 <form method="post" action="manageEmployee.jsp">
