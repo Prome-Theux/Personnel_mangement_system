@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Personnel_management_system:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Personnel_management_system_war_exploded</output-path>
+  <artifact type="exploded-war" build-on-make="true" name="Personnel_management_system:war exploded">
+    <output-path>$PROJECT_DIR$/out</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

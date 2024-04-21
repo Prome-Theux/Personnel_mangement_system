@@ -9,19 +9,30 @@
 <html>
 <head>
     <title>管理档案</title>
+    <style type="text/css">
+        th{
+            border:1px solid #999;
+            height:30px;
+
+        }
+        .table1 td{
+            border:1px solid #CBDEED;
+            height:30px;
+        }
+    </style>
 </head>
 <body>
 <table width="" border="0">
     <tr>
         <td valign="top"><table width="150" border="0">
             <tr>
-                <td><a href="addEmployee.jsp">添加员工档案</a></td>
+                <td><a href="./add.jsp">添加员工档案</a></td>
             </tr>
             <tr>
-                <td><a href="manageEmployee.jsp">管理员工档案</a></td>
+                <td><a href="./manage.jsp">管理员工档案</a></td>
             </tr>
             <tr>
-                <td><a href="searchEmployee.jsp">查询员工档案</a></td>
+                <td><a href="./search.jsp">查询员工档案</a></td>
             </tr>
         </table></td>
         <td><table width="850" border="0" cellpadding="0" cellspacing="0" class="table1">
