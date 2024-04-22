@@ -1,5 +1,12 @@
+function feature_button(feature,name)
+{
+    //feature传入功能名字（大写文件名）
+    //name为jsp文件
+    window.location.href = "./"+ feature + "/"+name;
+}
 function button(name) //按钮跳转
 {
+    window.location.href =  "./Feature/"+ name+".jsp";
     /*
     const Button_type = {//按钮的类型
         archives:0,
@@ -32,5 +39,6 @@ function button(name) //按钮跳转
     }
      */
     //写到这里才发觉上面的操作纯属犯傻逼，把简单的问题弄复杂了，只需要下面这一行就能搞定。
-    window.location.href =  "./Feature/"+ name+".jsp";
+
+
 }

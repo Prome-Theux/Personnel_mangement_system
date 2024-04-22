@@ -1,13 +1,9 @@
-#login_frame
+form td
 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-style: solid;
-    border-color: #5f6368;
-    text-align: center;
-    width: 600px;
+    padding-left:20px;
+    //border:1px solid #CBDEED;
+    height:30px;
+    color: #8ab4f8;
 }
 #system_frame
 {
@@ -26,10 +22,7 @@
     text-align: center;
     margin: 20px 16%;
 }
-#login_frame h1
-{
-    color: #bdc1c6;
-}
+
 #system_frame h1
 {
     color: #bdc1c6;
@@ -50,28 +43,33 @@
     flex-direction: column
 }
 
-
-#login_frame h3
-{
-    color: #5f6368;
-}
 #system_frame h3
 {
     color: #5f6368;
 }
 
 
-
-#login_frame .text
-{
-    //background: #bdc1c6;
-    width: 160px;
-}
 #system_frame .text
 {
     //background: #bdc1c6;
     width: 160px;
 }
-p{
-    cursor: pointer;
+a:link
+{
+    color: #bdc1c6;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #bdc1c6;
+    text-decoration: none;
+}
+a:hover {
+    color: #6a9ac9;
+    text-decoration: none;
+}
+a:active {
+    color: #6a9ac9;
+    text-decoration: none;
+
 }
