@@ -14,12 +14,12 @@
 <body style="background: #202124">
 <div id="system_frame" style="background: #20252f;flex-direction: row;">
     <div style="justify-content: flex-start;flex-direction: column;">
-        <h3><a href="./add.jsp">添加</a></h3>
-        <h3><a href="./manage.jsp">管理</a></h3>
-        <h3><a href="./search.jsp">查询</a></h3>
+        <h3><a href="./add.jsp">添加档案</a></h3>
+        <h3><a href="./manage.jsp">管理档案</a></h3>
+        <h3><a href="./search.jsp">查询档案</a></h3>
     </div>
     <form method="post" action="searchEmployee2.jsp">
-        <table width="850" border="0">
+        <table width="800" border="0">
             <tr>
                 <td colspan="4"><h3>查询员工档案信息</h3></td>
             </tr>
@@ -100,7 +100,7 @@
                 </select></td>
             </tr>
             <tr>
-                <td colspan="2" align="right"><input type="submit" name="button" value="提交"></td>
+                <td colspan="2" align="right"><input type="submit" name="button" value="查询"></td>
                 <td colspan="2"><input type="reset" name="button2"value="重置"></td>
             </tr>
         </table>

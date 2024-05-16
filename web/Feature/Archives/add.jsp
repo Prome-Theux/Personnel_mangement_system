@@ -34,7 +34,7 @@
     <form method="post" onsubmit="return check_input()" name="theForm" action="../AddEmployee" >
         <table width="800" border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <td height="20" colspan="2" align="left" valign="middle"><h2>添加员工档案信息</h2></td>
+                <td height="20" colspan="2" align="left" valign="middle"><h3>添加员工档案信息</h3></td>
             </tr>
             <tr>
                 <td width="200" align="center">员工编号：</td>
