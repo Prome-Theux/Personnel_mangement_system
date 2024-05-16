@@ -9,22 +9,15 @@
 <html>
 <head>
     <title>查询档案</title>
-    <style type="text/css">
-        span{
-            color:red;
-        }
-        h3{
-            padding-top:10px;
-        }
-        form td{
-            padding-left:20px;
-            border:1px solid #CBDEED;
-            height:30px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./archives.css">
 </head>
-<body>
+<body style="background: #202124">
 <div id="system_frame" style="background: #20252f;flex-direction: row;">
+    <div style="justify-content: flex-start;flex-direction: column;">
+        <h3><a href="./add.jsp">添加</a></h3>
+        <h3><a href="./manage.jsp">管理</a></h3>
+        <h3><a href="./search.jsp">查询</a></h3>
+    </div>
     <form method="post" action="searchEmployee2.jsp">
         <table width="850" border="0">
             <tr>
