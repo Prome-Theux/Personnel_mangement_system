@@ -22,6 +22,10 @@
     </style>
 </head>
 <body>
+<%
+    //设计思路
+    //调用jsp连接数据库 将数据库内容显示在网页中可以按照一定顺序排序
+%>
 <table width="" border="0">
     <tr>
         <td valign="top"><table width="150" border="0">

@@ -14,6 +14,10 @@
 </head>
 <body style="background: #202124;">
 <%
+    //设计思路 只有提交数据的时候才会调用jsp程序
+    //jsp用于审核提交的数据是非合规
+    //将表单信息添加到数据库内
+
     Class.forName("com.mysql.jdbc.Driver");  // 加载驱动
     String url = "jdbc:mysql://localhost:3306"; //数据库名
     String username = "root";  //数据库用户名
