@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.sql.*" %>
 <html>
 <head>
     <title>管理档案</title>
@@ -25,6 +26,18 @@
 <%
     //设计思路
     //调用jsp连接数据库 将数据库内容显示在网页中可以按照一定顺序排序
+    Class.forName("com.mysql.jdbc.Driver"); // 加载驱动
+    String url = "jdbc:mysql://localhost:3306"; //数据库名
+    String username = "root";  //数据库用户名
+    String password = "mysql";  //数据库用户密码
+    String database = "PMS_database";//调用的数据库
+    String tables = "archives";//调用的数据表
+
+    String con_data = url+"/"+database+"?user="+username+"&password="+password;
+    Connection conn = DriverManager.getConnection(con_data);   //连接数据库
+    Statement statement = conn.createStatement();
+    ResultSet rs=statement.executeQuery("select * from archives");
+
 %>
 <table width="" border="0">
     <tr>
