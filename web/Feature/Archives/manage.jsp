@@ -41,7 +41,7 @@
         <h3><a href="./search.jsp">查询档案</a></h3>
     </div>
     <div style="width: 80%;flex-direction: row-reverse;justify-content: flex-end;">
-        <table style="width: 100%; height: 10%;text-align: center" border="1">
+        <table style="width: 100%; height: 10%;text-align: center;color: #8ab4f8" border="1">
             <tr>
                 <th>Id</th>
                 <th>姓名</th>
