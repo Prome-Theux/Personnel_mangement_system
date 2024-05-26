@@ -34,55 +34,46 @@
     //out.print(rs.getString(2));
 
 %>
-<div id="system_frame" style="background: #20252f;flex-direction: row;">
+<div id="system_frame" style="background: #20252f;flex-direction: row;height: 800px;margin: 20px 5%">
     <div style="justify-content: flex-start;flex-direction: column;">
         <h3><a href="./add.jsp">添加档案</a></h3>
         <h3><a href="./manage.jsp">管理档案</a></h3>
         <h3><a href="./search.jsp">查询档案</a></h3>
     </div>
-    <div style="display: flex ;width: 80%;">
-        <h3 style="line-height: 1px">管理员工信息</h3>
-
-
+    <div style="width: 80%;flex-direction: row-reverse;justify-content: flex-end;">
+        <table style="width: 100%; height: 10%;text-align: center" border="1">
+            <tr>
+                <th>Id</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>部门</th>
+                <th>生日</th>
+                <th>户籍所在地</th>
+                <th>婚姻</th>
+                <th>身份证号</th>
+                <th>政治面貌</th>
+                <th>民族</th>
+                <th>学历</th>
+            </tr>
+            <tr>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+                <td>测试</td>
+            </tr>
+        </table>
     </div>
 
 
 
 
 </div>
-<table width="" border="0">
-    <tr>
-
-        <td><table width="850" border="0" cellpadding="0" cellspacing="0" class="table1">
-            <tr>
-                <td colspan="9" align="center" ><h2>管理员工档案信息</h2></td>
-            </tr>
-            <form action="delEmployee" onSubmit="return del()" id="form">
-                <tr bgcolor="#B6F9FC">
-                    <th class="td1">员工编号</th>
-                    <th class="td1">员工姓名</th>
-                    <th class="td1">员工性别</th>
-                    <th class="td1">出生日期</th>
-                    <th class="td1">员工籍贯</th>
-                    <th class="td1">婚姻状况</th>
-                    <th class="td1">身份证号</th>
-                    <th class="td1">民族</th>
-                    <th class="td1">操作</th>
-                    <th>全选<input type="checkbox" name="CBox" onclick="checkall(this.form)" />
-                        <input type="submit" value="删除" />
-                    </th>
-                </tr>
-            </form>
-            <tr><td colspan="9">
-                <form method="post" action="manageEmployee.jsp">
-
-                    跳转至第<input type="text" name="page"/>页
-                    <input type="submit" value="go"/>
-                </form>
-            </td></tr>
-        </table>
-        </td>
-    </tr>
-</table>
 </body>
 </html>
