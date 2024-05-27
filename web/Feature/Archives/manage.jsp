@@ -27,20 +27,20 @@
     Connection conn = DriverManager.getConnection(con_data);   //连接数据库
 
     Statement statement = conn.createStatement();
-    ResultSet rs = statement.executeQuery("select * from archives");// 执行查询语句后的返回对象
+    ResultSet resultSet = statement.executeQuery("select * from archives");// 执行查询语句后的返回对象
     //返回的对象为结果集 打印时需要指定get()列数，同时使用next()方法将光标移位
     //数据库列数从1开始，所以列数不能为0。打印需要使用next()先将光标移位，才能读取到数据值。
-    //rs.next();
-    //out.print(rs.getString(2));
+    //resultSet.next();
+    //out.print(resultSet.getString(2));
 
 %>
 <div id="system_frame" style="background: #20252f;flex-direction: row;height: 800px;margin: 20px 5%">
     <div style="justify-content: flex-start;flex-direction: column;">
-        <h3><a href="./add.jsp">添加档案</a></h3>
-        <h3><a href="./manage.jsp">管理档案</a></h3>
-        <h3><a href="./search.jsp">查询档案</a></h3>
+        <h3><a href="./add.jsp">添加</a></h3>
+        <h3><a href="./manage.jsp">管理</a></h3>
+        <h3><a href="./search.jsp">查询</a></h3>
     </div>
-    <div style="width: 80%;flex-direction: row-reverse;justify-content: flex-end;">
+    <div style="width: 100%;flex-direction: row-reverse;justify-content: flex-end;">
         <table style="width: 100%; height: 10%;text-align: center;color: #8ab4f8" border="1">
             <tr>
                 <th>Id</th>
@@ -48,25 +48,44 @@
                 <th>性别</th>
                 <th>部门</th>
                 <th>生日</th>
-                <th>户籍所在地</th>
+                <th>户籍</th>
                 <th>婚姻</th>
                 <th>身份证号</th>
                 <th>政治面貌</th>
                 <th>民族</th>
                 <th>学历</th>
+                <th>专业</th>
+                <th>入职年份</th>
+                <th>毕业院校</th>
+                <th>职位</th>
+                <th>状况</th>
+                <th>在职类型</th>
+                <th>简历</th>
             </tr>
+            <%
+                //打印数据库中的档案资料
+
+
+            %>
             <tr>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
-                <td>测试</td>
+                <td>000001</td>
+                <td>刘素芳</td>
+                <td>女</td>
+                <td>总经理室</td>
+                <td>1980-01-01</td>
+                <td>福建省福州市</td>
+                <td>已婚</td>
+                <td>123123255719213311</td>
+                <td>群众</td>
+                <td>汉族</td>
+                <td>本科</td>
+                <td>信息管理与信息系统</td>
+                <td>2003-07-01</td>
+                <td>福州大学</td>
+                <td>工程师</td>
+                <td>在职</td>
+                <td>正式工</td>
+                <td>个人简历</td>
             </tr>
         </table>
     </div>
