@@ -104,7 +104,8 @@
                     <option value="本科" selected>本科</option>
                     <option value="专科">专科</option>
                     <option value="研究生">研究生</option>
-                </select><span>*</span></td>
+                </select><span>*</span>
+                </td>
             </tr>
             <tr>
                 <td width="200" align="center">专&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;业：</td>

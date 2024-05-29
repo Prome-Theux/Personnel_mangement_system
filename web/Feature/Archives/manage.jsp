@@ -11,9 +11,18 @@
 <head>
     <title>管理档案</title>
     <link rel="stylesheet" type="text/css" href="archives.css">
+    <style>
+        tr:nth-child(1)
+        {
+            background: #101820;
+        }
+        tr:nth-child(2n)
+        {
+            color: #a6b3c9;
+        }
+    </style>
 </head>
 <body style="background: #202124">
-
 <%
     //设计思路
     //调用jsp连接数据库 将数据库内容显示在网页中可以按照一定顺序排序
@@ -41,8 +50,8 @@
         <h3><a href="./search.jsp">查询</a></h3>
     </div>
     <div style="width: 100%;flex-direction: row-reverse;justify-content: flex-end;">
-        <table style="width: 100%; height: 10%;text-align: center;color: #8ab4f8" border="1">
-            <tr>
+        <table style="width: 100%; height: 10%;text-align: center;color: #6f92cc" border="1">
+            <tr style="color: #bdc1c6">
                 <th>Id</th>
                 <th>姓名</th>
                 <th>性别</th>
@@ -62,33 +71,31 @@
                 <th>在职类型</th>
                 <th>简历</th>
             </tr>
-            <%
-                //打印数据库中的档案资料
-                while (resultSet.next())
-                {
-                        out.print("<tr>");
-                        out.print("<td>" + resultSet.getInt(1) + "</td>");
-                        out.print("<td>" + resultSet.getString(2) + "</td>");
-                        out.print("<td>" + resultSet.getString(3) + "</td>");
-                        out.print("<td>" + resultSet.getString(4) + "</td>");
-                        out.print("<td>" + resultSet.getString(5) + "</td>");
-                        out.print("<td>" + resultSet.getString(6) + "</td>");
-                        out.print("<td>" + resultSet.getString(7) + "</td>");
-                        out.print("<td>" + resultSet.getString(8) + "</td>");
-                        out.print("<td>" + resultSet.getString(9) + "</td>");
-                        out.print("<td>" + resultSet.getString(10) + "</td>");
-                        out.print("<td>" + resultSet.getString(11) + "</td>");
-                        out.print("<td>" + resultSet.getString(12) + "</td>");
-                        out.print("<td>" + resultSet.getString(13) + "</td>");
-                        out.print("<td>" + resultSet.getString(14) + "</td>");
-                        out.print("<td>" + resultSet.getString(15) + "</td>");
-                        out.print("<td>" + resultSet.getString(16) + "</td>");
-                        out.print("<td>" + resultSet.getString(17) + "</td>");
-                        out.print("<td>" + resultSet.getString(18) + "</td>");
-                        out.print("</tr>");
-                }
-
-            %>
+<%//打印数据库中的档案资料
+            while (resultSet.next())
+            {
+                out.print("<tr>");
+                out.print("<td>" + resultSet.getInt(1) + "</td>");
+                out.print("<td>" + resultSet.getString(2) + "</td>");
+                out.print("<td>" + resultSet.getString(3) + "</td>");
+                out.print("<td>" + resultSet.getString(4) + "</td>");
+                out.print("<td>" + resultSet.getString(5) + "</td>");
+                out.print("<td>" + resultSet.getString(6) + "</td>");
+                out.print("<td>" + resultSet.getString(7) + "</td>");
+                out.print("<td>" + resultSet.getString(8) + "</td>");
+                out.print("<td>" + resultSet.getString(9) + "</td>");
+                out.print("<td>" + resultSet.getString(10) + "</td>");
+                out.print("<td>" + resultSet.getString(11) + "</td>");
+                out.print("<td>" + resultSet.getString(12) + "</td>");
+                out.print("<td>" + resultSet.getString(13) + "</td>");
+                out.print("<td>" + resultSet.getString(14) + "</td>");
+                out.print("<td>" + resultSet.getString(15) + "</td>");
+                out.print("<td>" + resultSet.getString(16) + "</td>");
+                out.print("<td>" + resultSet.getString(17) + "</td>");
+                out.print("<td>" + resultSet.getString(18) + "</td>");
+                out.print("</tr>");
+            }
+%>
         </table>
     </div>
 
