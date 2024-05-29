@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="archives.css">
 </head>
 <body style="background: #202124">
+
 <%
     //设计思路
     //调用jsp连接数据库 将数据库内容显示在网页中可以按照一定顺序排序
@@ -32,9 +33,8 @@
     //数据库列数从1开始，所以列数不能为0。打印需要使用next()先将光标移位，才能读取到数据值。
     //resultSet.next();
     //out.print(resultSet.getString(2));
-
 %>
-<div id="system_frame" style="background: #20252f;flex-direction: row;height: 800px;margin: 20px 5%">
+<div id="system_frame" style="background: #20252f;flex-direction: row;height: auto;margin: 20px 5%">
     <div style="justify-content: flex-start;flex-direction: column;">
         <h3><a href="./add.jsp">添加</a></h3>
         <h3><a href="./manage.jsp">管理</a></h3>
@@ -64,29 +64,31 @@
             </tr>
             <%
                 //打印数据库中的档案资料
-
+                while (resultSet.next())
+                {
+                        out.print("<tr>");
+                        out.print("<td>" + resultSet.getInt(1) + "</td>");
+                        out.print("<td>" + resultSet.getString(2) + "</td>");
+                        out.print("<td>" + resultSet.getString(3) + "</td>");
+                        out.print("<td>" + resultSet.getString(4) + "</td>");
+                        out.print("<td>" + resultSet.getString(5) + "</td>");
+                        out.print("<td>" + resultSet.getString(6) + "</td>");
+                        out.print("<td>" + resultSet.getString(7) + "</td>");
+                        out.print("<td>" + resultSet.getString(8) + "</td>");
+                        out.print("<td>" + resultSet.getString(9) + "</td>");
+                        out.print("<td>" + resultSet.getString(10) + "</td>");
+                        out.print("<td>" + resultSet.getString(11) + "</td>");
+                        out.print("<td>" + resultSet.getString(12) + "</td>");
+                        out.print("<td>" + resultSet.getString(13) + "</td>");
+                        out.print("<td>" + resultSet.getString(14) + "</td>");
+                        out.print("<td>" + resultSet.getString(15) + "</td>");
+                        out.print("<td>" + resultSet.getString(16) + "</td>");
+                        out.print("<td>" + resultSet.getString(17) + "</td>");
+                        out.print("<td>" + resultSet.getString(18) + "</td>");
+                        out.print("</tr>");
+                }
 
             %>
-            <tr>
-                <td>000001</td>
-                <td>刘素芳</td>
-                <td>女</td>
-                <td>总经理室</td>
-                <td>1980-01-01</td>
-                <td>福建省福州市</td>
-                <td>已婚</td>
-                <td>123123255719213311</td>
-                <td>群众</td>
-                <td>汉族</td>
-                <td>本科</td>
-                <td>信息管理与信息系统</td>
-                <td>2003-07-01</td>
-                <td>福州大学</td>
-                <td>工程师</td>
-                <td>在职</td>
-                <td>正式工</td>
-                <td>个人简历</td>
-            </tr>
         </table>
     </div>
 
