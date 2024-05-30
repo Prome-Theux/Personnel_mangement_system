@@ -30,7 +30,7 @@
     String url = "jdbc:mysql://localhost:3306"; //数据库名
     String username = "root";  //数据库用户名
     String password = "mysql";  //数据库用户密码
-    String database = "PMS_database";//调用的数据库
+    String database = "pms_database";//调用的数据库
     String tables = "archives";//调用的数据表
 
     String con_data = url+"/"+database+"?user="+username+"&password="+password;
