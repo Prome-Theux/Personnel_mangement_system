@@ -21,6 +21,7 @@
         <h3><a href="./add.jsp">添加档案</a></h3>
         <h3><a href="./manage.jsp">管理档案</a></h3>
         <h3><a href="./search.jsp">查询档案</a></h3>
+        <h3><a href="../../Management_System.jsp">返回主页</a></h3>
     </div>
     <form method="post" action="searchEmployee2.jsp">
         <table width="800" border="0">

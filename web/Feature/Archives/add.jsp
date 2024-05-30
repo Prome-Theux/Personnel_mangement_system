@@ -14,28 +14,30 @@
 </head>
 <body style="background: #202124;">
 <%
-    //设计思路 只有提交数据的时候才会调用jsp程序
-    //jsp用于审核提交的数据是非合规
-    //将表单信息添加到数据库内
-
-    Class.forName("com.mysql.jdbc.Driver");  // 加载驱动
+    //设计思路
+    //调用jsp连接数据库 将数据库内容显示在网页中可以按照一定顺序排序
+    Class.forName("com.mysql.jdbc.Driver"); // 加载驱动
     String url = "jdbc:mysql://localhost:3306"; //数据库名
     String username = "root";  //数据库用户名
     String password = "mysql";  //数据库用户密码
-    Connection conn = DriverManager.getConnection(url, username, password);   //连接数据库
-    Statement statement = conn.createStatement();
+    String database = "pms_database";//调用的数据库
+    String tables = "archives";//调用的数据表
 
-    if(conn != null){
-        //out.print("数据库连接成功！");
-    }
+    String con_data = url+"/"+database+"?user="+username+"&password="+password;
+    Connection conn = DriverManager.getConnection(con_data);   //连接数据库
+    //if(conn != null){out.print("数据库连接成功！");}
+
+
+
 %>
 <div id="system_frame" style="background: #20252f;flex-direction: row;">
     <div style="justify-content: flex-start;flex-direction: column;">
         <h3><a href="./add.jsp">添加档案</a></h3>
         <h3><a href="./manage.jsp">管理档案</a></h3>
         <h3><a href="./search.jsp">查询档案</a></h3>
+        <h3><a href="../../Management_System.jsp">返回主页</a></h3>
     </div>
-    <form method="post" onsubmit="return check_input()" name="theForm" action="../AddEmployee" >
+    <form method="post" onsubmit="return check_input()" name="theForm" action="./submit.jsp" >
         <table width="800" border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <td height="20" colspan="2" align="left" valign="middle"><h3>添加员工档案信息</h3></td>

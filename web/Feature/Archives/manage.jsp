@@ -48,6 +48,7 @@
         <h3><a href="./add.jsp">添加</a></h3>
         <h3><a href="./manage.jsp">管理</a></h3>
         <h3><a href="./search.jsp">查询</a></h3>
+        <h3><a href="../../Management_System.jsp">主页</a></h3>
     </div>
     <div style="width: 100%;flex-direction: row-reverse;justify-content: flex-end;">
         <table style="width: 100%; height: 10%;text-align: center;color: #6f92cc" border="1">
