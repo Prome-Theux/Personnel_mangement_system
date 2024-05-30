@@ -36,7 +36,7 @@
     String con_data = url+"/"+database+"?user="+username+"&password="+password;
     Connection conn = DriverManager.getConnection(con_data);   //连接数据库
 
-    Statement statement = conn.createStatement();
+    Statement statement = conn.createStatement(); //执行方法 初始化
     ResultSet resultSet = statement.executeQuery("select * from archives");// 执行查询语句后的返回对象
     //返回的对象为结果集 打印时需要指定get()列数，同时使用next()方法将光标移位
     //数据库列数从1开始，所以列数不能为0。打印需要使用next()先将光标移位，才能读取到数据值。
