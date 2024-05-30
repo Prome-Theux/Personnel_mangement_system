@@ -126,19 +126,20 @@
                     <option value="高级工程师">高级工程师</option>
                     <option value="工程师">工程师</option>
                     <option value="其他">其他</option>
-                </select></td>
+                </select>
+                </td>
             </tr>
             <tr>
                 <td width="200" align="center">在职情况：</td>
                 <td><select name="Incumbency">
                     <option value="在职" selected>在职</option>
-                    <option value="兼职">兼职</option>
+                    <option value="离职">离职</option>
                 </select></td>
             </tr>
             <tr>
                 <td width="200" align="center">用工形式：</td>
                 <td><select name="IncumbencyType">
-                    <option value="在职工" selected>在职工</option>
+                    <option value="正式工" selected>正式工</option>
                     <option value="临时工">临时工</option>
                 </select></td>
             </tr>
