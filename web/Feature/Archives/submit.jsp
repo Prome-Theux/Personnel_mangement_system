@@ -48,35 +48,66 @@
             <th>简历</th>
         </tr>
         <tr style="color:  #2d435e;">
+
+
+
         <%
-            out.print("<td>" +  request.getParameter("EmployeeID") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
-            out.print("<td>" +  request.getParameter("name") +  "</td>");
+            //转换编码
+            String str1 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str2 = new String(request.getParameter("UserName").getBytes("iso-8859-1"), "utf-8");
+            String str3 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str4 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str5 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str6 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str7 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str8 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str9 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str10 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str11 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str12 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str13 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str14 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str15 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str16 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str17 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str18 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            //打印
+            out.print("<td>" +  str1 +  "</td>");
+            out.print("<td>" +  str2 +  "</td>");
+            out.print("<td>" +  str3 +  "</td>");
+            out.print("<td>" +  str4 +  "</td>");
+            out.print("<td>" +  str5 +  "</td>");
+            out.print("<td>" +  str6 +  "</td>");
+            out.print("<td>" +  str7 +  "</td>");
+            out.print("<td>" +  str8 +  "</td>");
+            out.print("<td>" +  str9 +  "</td>");
+            out.print("<td>" +  str10 +  "</td>");
+            out.print("<td>" +  str11 +  "</td>");
+            out.print("<td>" +  str12 +  "</td>");
+            out.print("<td>" +  str13 +  "</td>");
+            out.print("<td>" +  str14 +  "</td>");
+            out.print("<td>" +  str15 +  "</td>");
+            out.print("<td>" +  str16 +  "</td>");
+            out.print("<td>" +  str17 +  "</td>");
+            out.print("<td>" +  str18 +  "</td>");
         %>
         </tr>
+
     </table>
+    <form method="post" onsubmit="return check_input()" name="theForm" action="./formally_submit.jsp" id="form">
+        <input type="hidden" name="EmployeeID" value="<%= request.getParameter("EmployeeID")%>"/>
+        <input type="hidden" name="UserName" value="<%=  str2%>">
+
+    </form>
     <script>
-        function submit ()
-        {
+        function submit () {
+            var form = document.getElementById('form');
+            form.submit();
+
             window.alert("提交成功");
         }
     </script>
-    <h3 style="margin-top: 20px;margin-right: 10px"><a href="../Archives/formally_submit.jsp" onclick="submit()">确认提交</a></h3>
+    <h3 style="margin-top: 20px;margin-right: 10px"><a href="#" onclick="submit()">确认提交</a></h3>
     <h3 style="margin-top: 20px;margin-left: 10px"><a href="../Archives/add.jsp">重新填写</a></h3>
 </div>
 </body>

@@ -151,7 +151,7 @@
             </tr>
             <tr>
                 <td width="200" align="center"><input type="submit" name="button" value="提交"></td>
-                <td><input type="reset" name="button2"value="重置"></td>
+                <td><input type="reset" name="button2" value="重置"></td>
             </tr>
         </table>
     </form>
