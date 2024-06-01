@@ -93,7 +93,7 @@
                     <option value="中共党员" selected>中共党员</option>
                     <option value="共青团员">共青团员</option>
                     <option value="群众">群众</option>
-                    <option value="其他民主党派">其他民主党派</option>
+                    <option value="民进会员">民进会员</option>
                 </select><span>*</span></td>
             </tr>
             <tr>

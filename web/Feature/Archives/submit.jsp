@@ -25,7 +25,7 @@
 </head>
 <body style="background: #202124">
 <div id="system_frame" style="background: #20252f;flex-direction: row;height: auto;margin: 20px 5%;flex-wrap: wrap;justify-content: center">
-    <h1>确认提交</h1>
+    <h1>请核对提交信息</h1>
     <table style="width: 100%;height: auto;text-align: center;">
         <tr style="color: #bdc1c6">
             <th>Id</th>
@@ -49,28 +49,26 @@
         </tr>
         <tr style="color:  #2d435e;">
 
-
-
         <%
             //转换编码
             String str1 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
             String str2 = new String(request.getParameter("UserName").getBytes("iso-8859-1"), "utf-8");
-            String str3 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str4 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str5 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str6 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str7 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str8 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str9 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str10 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str11 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str12 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str13 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str14 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str15 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str16 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str17 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
-            String str18 = new String(request.getParameter("EmployeeID").getBytes("iso-8859-1"), "utf-8");
+            String str3 = new String(request.getParameter("Sex").getBytes("iso-8859-1"), "utf-8");
+            String str4 = new String(request.getParameter("Branch").getBytes("iso-8859-1"), "utf-8");
+            String str5 = new String(request.getParameter("Birthday").getBytes("iso-8859-1"), "utf-8");
+            String str6 = new String(request.getParameter("NativePlace").getBytes("iso-8859-1"), "utf-8");
+            String str7 = new String(request.getParameter("Marriage").getBytes("iso-8859-1"), "utf-8");
+            String str8 = new String(request.getParameter("IdentityID").getBytes("iso-8859-1"), "utf-8");
+            String str9 = new String(request.getParameter("Politics").getBytes("iso-8859-1"), "utf-8");
+            String str10 = new String(request.getParameter("Folk").getBytes("iso-8859-1"), "utf-8");
+            String str11 = new String(request.getParameter("Education").getBytes("iso-8859-1"), "utf-8");
+            String str12 = new String(request.getParameter("Department").getBytes("iso-8859-1"), "utf-8");
+            String str13 = new String(request.getParameter("GraduateDate").getBytes("iso-8859-1"), "utf-8");
+            String str14 = new String(request.getParameter("University").getBytes("iso-8859-1"), "utf-8");
+            String str15 = new String(request.getParameter("Position").getBytes("iso-8859-1"), "utf-8");
+            String str16 = new String(request.getParameter("Incumbency").getBytes("iso-8859-1"), "utf-8");
+            String str17 = new String(request.getParameter("IncumbencyType").getBytes("iso-8859-1"), "utf-8");
+            String str18 = new String(request.getParameter("Resume").getBytes("iso-8859-1"), "utf-8");
             //打印
             out.print("<td>" +  str1 +  "</td>");
             out.print("<td>" +  str2 +  "</td>");
@@ -95,9 +93,24 @@
 
     </table>
     <form method="post" onsubmit="return check_input()" name="theForm" action="./formally_submit.jsp" id="form">
-        <input type="hidden" name="EmployeeID" value="<%= request.getParameter("EmployeeID")%>"/>
+        <input type="hidden" name="EmployeeID" value="<%= str1%>">
         <input type="hidden" name="UserName" value="<%=  str2%>">
-
+        <input type="hidden" name="Sex" value="<%= str3%>">
+        <input type="hidden" name="Branch" value="<%= str4%>">
+        <input type="hidden" name="Birthday" value="<%= str5%>">
+        <input type="hidden" name="NativePlace" value="<%= str6%>">
+        <input type="hidden" name="Marriage" value="<%= str7%>">
+        <input type="hidden" name="IdentityID" value="<%= str8%>">
+        <input type="hidden" name="Politics" value="<%= str9%>">
+        <input type="hidden" name="Folk" value="<%= str10%>">
+        <input type="hidden" name="Education" value="<%= str11%>">
+        <input type="hidden" name="Department" value="<%= str12%>">
+        <input type="hidden" name="GraduateDate" value="<%= str13%>">
+        <input type="hidden" name="University" value="<%= str14%>">
+        <input type="hidden" name="Position" value="<%= str15%>">
+        <input type="hidden" name="Incumbency" value="<%= str16%>">
+        <input type="hidden" name="IncumbencyType" value="<%= str17%>">
+        <input type="hidden" name="Resume" value="<%= str18%>">
     </form>
     <script>
         function submit () {
