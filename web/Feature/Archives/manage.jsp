@@ -71,6 +71,7 @@
                 <th>状况</th>
                 <th>在职类型</th>
                 <th>简历</th>
+                <th>删除</th>
             </tr>
 <%//打印数据库中的档案资料
             while (resultSet.next())
@@ -94,15 +95,23 @@
                 out.print("<td>" + resultSet.getString(16) + "</td>");
                 out.print("<td>" + resultSet.getString(17) + "</td>");
                 out.print("<td>" + resultSet.getString(18) + "</td>");
+                out.print("<td><button style='width:16px;height:16px;background: #e07373;'"+"name="+"'"+resultSet.getInt(1)+"'"+ "onclick='del(name)' " +"></button></td>");
+                //调用js删除
                 out.print("</tr>");
             }
 %>
         </table>
     </div>
-
-
-
-
 </div>
+<button name="测试" onclick="del(name)"></button>
+
+<script>
+    function del(name)
+    {
+        window.alert(name);
+        window.alert("删除");
+    }
+</script>
+
 </body>
 </html>
