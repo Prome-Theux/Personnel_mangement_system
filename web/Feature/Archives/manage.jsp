@@ -96,6 +96,10 @@
                 out.print("<td>" + resultSet.getString(17) + "</td>");
                 out.print("<td>" + resultSet.getString(18) + "</td>");
                 out.print("<td><button style='width:16px;height:16px;background: #e07373;'"+"name="+"'"+resultSet.getInt(1)+"'"+ "onclick='del(name)' " +"></button></td>");
+                //创建一个隐藏的表单 表单的id为上面的name名
+                out.print("<form id='"+resultSet.getInt(1)+"'>");
+                out.print("<input type='hidden' name='Id' value='"+resultSet.getInt(1)+"'>");
+                out.print("</form>");
                 //调用js删除
                 out.print("</tr>");
             }
@@ -103,13 +107,15 @@
         </table>
     </div>
 </div>
-<button name="测试" onclick="del(name)"></button>
+
 
 <script>
     function del(name)
     {
         window.alert(name);
         window.alert("删除");
+
+
     }
 </script>
 
