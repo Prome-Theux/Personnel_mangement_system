@@ -97,25 +97,32 @@
                 out.print("<td>" + resultSet.getString(18) + "</td>");
                 out.print("<td><button style='width:16px;height:16px;background: #e07373;'"+"name="+"'"+resultSet.getInt(1)+"'"+ "onclick='del(name)' " +"></button></td>");
                 //创建一个隐藏的表单 表单的id为上面的name名
-                out.print("<form id='"+resultSet.getInt(1)+"'>");
-                out.print("<input type='hidden' name='Id' value='"+resultSet.getInt(1)+"'>");
-                out.print("</form>");
+                //out.print("<input type='hidden' name='Id' value='"+resultSet.getInt(1)+"'>");
+                //out.print("<form id='"+resultSet.getInt(1)+"'>");
                 //调用js删除
                 out.print("</tr>");
+
             }
 %>
         </table>
     </div>
 </div>
+<form method="post" action="./remove.jsp" id="form">
+    <input type="hidden" value="默认值" name="ID" id="input">
+</form>
 
 
 <script>
     function del(name)
     {
-        window.alert(name);
+        //新思路 点击按钮的时候修改表单的值，并提交表单
+        var input = document.getElementById("input");
+        input.setAttribute("value",name);
+        window.alert(input.getAttribute("value"));
         window.alert("删除");
 
-
+        var form = document.getElementById('form');
+        form.submit();
     }
 </script>
 
