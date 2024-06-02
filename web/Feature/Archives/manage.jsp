@@ -111,15 +111,14 @@
     <input type="hidden" value="默认值" name="ID" id="input">
 </form>
 
-
 <script>
     function del(name)
     {
         //新思路 点击按钮的时候修改表单的值，并提交表单
         var input = document.getElementById("input");
         input.setAttribute("value",name);
-        window.alert(input.getAttribute("value"));
-        window.alert("删除");
+        //window.alert(input.getAttribute("value"));
+        //window.alert("删除");
 
         var form = document.getElementById('form');
         form.submit();
