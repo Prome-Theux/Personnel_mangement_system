@@ -9,21 +9,21 @@
 <%@ page import="java.sql.*"%>
 <html>
 <head>
-    <title>添加档案</title>
+    <title>添加调动</title>
     <link rel="stylesheet" type="text/css" href="./archives.css">
 </head>
 <body style="background: #202124;">
 <div id="system_frame" style="background: #20252f;flex-direction: row;">
     <div style="justify-content: flex-start;flex-direction: column;">
-        <h3><a href="./add.jsp">添加档案</a></h3>
-        <h3><a href="./manage.jsp">管理档案</a></h3>
-        <h3><a href="./search.jsp">查询档案</a></h3>
+        <h3><a href="./add.jsp">添加调动</a></h3>
+        <h3><a href="./manage.jsp">管理调动</a></h3>
+        <h3><a href="./search.jsp">查询调动</a></h3>
         <h3><a href="../../Management_System.jsp">返回主页</a></h3>
     </div>
     <form method="post" onsubmit="return check_input()" name="theForm" action="./submit.jsp" >
         <table width="800" border="0" cellpadding="0" cellspacing="0">
             <tr>
-                <td height="20" colspan="2" align="left" valign="middle"><h3>添加员工档案信息</h3></td>
+                <td height="20" colspan="2" align="left" valign="middle"><h3>添加员工调动信息</h3></td>
             </tr>
             <tr>
                 <td width="200" align="center">员工编号：</td>

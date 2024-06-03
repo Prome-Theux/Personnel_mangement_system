@@ -9,7 +9,7 @@
 <%@ page import="java.sql.*" %>
 <html>
 <head>
-    <title>管理档案</title>
+    <title>管理职称</title>
     <link rel="stylesheet" type="text/css" href="archives.css">
     <style>
         tr:nth-child(1)
@@ -73,7 +73,7 @@
                 <th>简历</th>
                 <th>删除</th>
             </tr>
-<%//打印数据库中的档案资料
+<%//打印数据库中的职称资料
             while (resultSet.next())
             {
                 out.print("<tr>");
