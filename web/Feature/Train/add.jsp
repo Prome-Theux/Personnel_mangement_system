@@ -14,7 +14,6 @@
         <h3><a href="./search.jsp">查询奖惩</a></h3>
         <h3><a href="../../Management_System.jsp">返回主页</a></h3>
     </div>
-
     <form id="form2" name="form2" method="post" action="AddTrain"
         onSubmit="return aria-check_in-put(this)">
         <table>
