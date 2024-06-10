@@ -14,7 +14,7 @@
 <body style="background: #202124">
 <%
     //设计思路
-    //提交表单的时候将数据传入jsp当中，根据条件来调用数据库显示在网页上
+    //调用mysql查询相关信息，并展示在界面上，展示模块部分可通过管理模块实现。
 %>
 <div id="system_frame" style="background: #20252f;flex-direction: row;">
     <div style="justify-content: flex-start;flex-direction: column;">
