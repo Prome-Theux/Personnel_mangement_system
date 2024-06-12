@@ -7,6 +7,10 @@
         <entry key="file://$PROJECT_DIR$/web/Feature/Archives/manage.jsp" value="file://$PROJECT_DIR$/web/Feature/Archives" />
         <entry key="file://$PROJECT_DIR$/web/Feature/Archives/search.jsp" value="file://$PROJECT_DIR$/web/Feature/Archives" />
         <entry key="file://$PROJECT_DIR$/web/Feature/Archives/submit.jsp" value="file://$PROJECT_DIR$/web/Feature/Archives" />
+        <entry key="file://$PROJECT_DIR$/web/Feature/Position/add.jsp" value="file://$PROJECT_DIR$/web/Feature/Position" />
+        <entry key="file://$PROJECT_DIR$/web/Feature/Position/addTrain.jsp" value="file://$PROJECT_DIR$/web/Feature/Position" />
+        <entry key="file://$PROJECT_DIR$/web/Feature/Train/search.jsp" value="file://$PROJECT_DIR$/web/Feature/Train" />
+        <entry key="file://$PROJECT_DIR$/web/Feature/Train/viewTrain.jsp" value="file://$PROJECT_DIR$/web/Feature/Train" />
         <entry key="file://$PROJECT_DIR$/web/Feature/archives.jsp" value="file://$PROJECT_DIR$/web/Feature" />
         <entry key="file://$PROJECT_DIR$/web/index.jsp" value="file://$PROJECT_DIR$/web" />
       </map>

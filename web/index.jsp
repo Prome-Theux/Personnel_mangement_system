@@ -15,7 +15,7 @@
 <div id="login_frame">
     <h1>人事管理系统</h1>
     <!---在标题中加上了版本号，格式为0.+日期--->
-    <h3>----22软件技术 第二小组 0.6.2</h3>
+    <h3>----22软件技术 第二小组 0.6.12</h3>
     <form>
         <input class="text" type="text" name="uid"><br>
         <input class="text" type="password" name="pass"><br>
