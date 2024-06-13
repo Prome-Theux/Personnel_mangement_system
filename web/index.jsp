@@ -12,23 +12,29 @@
     <title>人事管理系统</title>
 </head>
 <body style="background: #202124;position: relative;" >
+<script>
+    function login()
+    {
+
+        var uid = document.getElementById("uid").value;
+        var pass = document.getElementById("pass").value;
+        if (uid==="admin" && pass==="123456")
+        {
+            window.location.href = "./Management_System.jsp";
+        }
+        else {
+            window.alert("密码错误");
+        }
+
+    }
+</script>
 <div id="login_frame">
     <h1>人事管理系统</h1>
     <!---在标题中加上了版本号，格式为0.+日期--->
     <h3>----22软件技术 第二小组 0.6.12</h3>
-    <form>
-        <input class="text" type="text" name="uid"><br>
-        <input class="text" type="password" name="pass"><br>
-        <input type="submit" name="take">
-    </form>
+        <input class="text" type="text" name="uid" id="uid" value="admin"><br>
+        <input class="text" type="password" name="pass" id="pass" value="123456"><br>
+        <input type="submit" name="take" onclick="login()">
 </div>
-<%
-    //添加修改运行
-    //写分页显示模块 删除显示模块
-    //其他表的显示操作
-    //后续功能
-
-%>
-
 </body>
 </html>

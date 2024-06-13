@@ -51,14 +51,14 @@
                     <tr>
                         <td>聘用专业技术职务:</td>
                         <td>
-                            <input name="duty" type="text" id="duty" value="" readonly>
+                            <input name="duty" type="text" id="duty" value="软件工程师" readonly>
                             *
                         </td>
                     </tr>
                     <tr>
                         <td>聘用起始日期:</td>
                         <td>
-                            <input name="startdate" type="text" id="startdate" value="" readonly>
+                            <input name="startdate" type="text" id="startdate" value="2022-1-1" readonly>
                             *
                         </td>
                     </tr>
@@ -79,7 +79,7 @@
                     <tr>
                         <td>职称英语:</td>
                         <td>
-                            <input name="english" type="text" id="english" value="" readonly>
+                            <input name="english" type="text" id="english" value="四级" readonly>
                             *
                         </td>
                     </tr>
